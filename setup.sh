@@ -22,7 +22,6 @@ echo ""
 
 # Nome do arquivo cron
 CRON_FILE="videoSaverCron"
-screen -dmS SESSION bash -c '/home/before/Desktop/Carlos/VideoSaver/videoStart.sh; exec bash'
 # Cria ou atualiza o arquivo cron com a tarefa
 echo "0 9-21 * * * screen -dmS SESSION bash -c '$DIR/$BASH_FILE; exec bash'" > $CRON_FILE
 
